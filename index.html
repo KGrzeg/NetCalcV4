@@ -1,0 +1,31 @@
+﻿<!Doctype html>
+<html>
+<head>
+	<link href="style.css" type="text/css" rel="StyleSheet">
+	<title>NetCalcV4</title>
+	<script type="text/javascript" src="core.js"></script>
+</head>
+<body>
+	<input type="text" placeholder="192.168.10.101" maxlength="15" id="ip" />
+	<input type="text" placeholder="255.255.192.0" maxlength="15" id="mask" />
+	<button type="button" onclick="licz1()">Daj mnie wynik!</button><br>
+
+	<input type="text" placeholder="192.168.10.101/18" maxlength="18" id="ipm" />
+	<button type="button" onclick="licz2()">Daj mnie wynik!</button>
+	<div id="disc" style="display:none">
+		<button type="button" id="bd" onclick="disco()">Disco!</button>
+		<button type="button" id="bp" onclick="pause()">Pauza</button>
+	</div><br>
+
+	<div id="subv" style="display:none">
+		<input type="number" id="subs" placeholder="4" maxlength="2" />
+		<button type="button" onclick="subs()">Podsieci</button><br />
+	</div>
+
+	<input type="text" id="converter" placeholder="11000000" maxlength="8">
+	<button type="button" id="bindec" onclick="convert()">Dec->Bin->Hex (max:255)</button>
+	<br><br>
+	<div id="container">
+	</div>
+</body>
+</html>
